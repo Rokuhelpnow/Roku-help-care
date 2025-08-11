@@ -1,61 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roku Support</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roku Support</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-        .container {
-            max-width: 600px;
-            margin: 100px auto;
-            background: #ffffff;
-            padding: 40px 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+    header {
+      background-color: #6b1e8c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        h1 {
-            color: #6b1e8c;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
 
-        p {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 30px;
-        }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-        .call-button {
-            display: inline-block;
-            background-color: #6b1e8c;
-            color: #ffffff;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    .call-section {
+      text-align: center;
+      margin: 40px 0;
+    }
 
-        .call-button:hover {
-            background-color: #54166e;
-        }
-    </style>
+    .call-button {
+      display: inline-block;
+      background-color: #6b1e8c;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .call-button:hover {
+      background-color: #54166e;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .feature-item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .feature-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Roku Support</h1>
-        <p>Need help with your Roku device? Call our support team now.</p>
-        <a href="tel:12345678" class="call-button">Call Now: 12345678</a>
+  <header>
+    <h1>Roku Device Support</h1>
+    <p>Get help with setup, troubleshooting, and more</p>
+  </header>
+
+  <div class="container">
+
+    <div class="call-section">
+      <p>Need assistance? Call our support team now.</p>
+      <a href="tel:12345678" class="call-button">Call Now: 12345678</a>
     </div>
+
+    <div class="about">
+      <h2 class="section-title">What is Roku?</h2>
+      <p>
+        Roku is a popular streaming device that allows you to watch thousands of channels,
+        including Netflix, Hulu, Amazon Prime Video, and more. Whether it's the Roku Stick,
+        Roku Express, or Roku Ultra, you can enjoy high-definition content on your TV with ease.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Roku_Express_%282017%29.jpg" alt="Roku Express">
+        <h3>Roku Express</h3>
+        <p>Affordable and easy to set up. Perfect for HD streaming on any TV.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Roku_Streaming_Stick%2B.jpg/640px-Roku_Streaming_Stick%2B.jpg" alt="Roku Streaming Stick+">
+        <h3>Streaming Stick+</h3>
+        <p>Portable and powerful. Streams in 4K with long-range wireless.</p>
+      </div>
+
+      <div class="feature-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Roku_Ultra.jpg" alt="Roku Ultra">
+        <h3>Roku Ultra</h3>
+        <p>Top-tier performance with voice remote, Ethernet, and Dolby Vision support.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Roku Support. This is a demo site. All rights reserved.
+  </footer>
 
 </body>
 </html>
+```
+
+---
+
+### 📝 Notes:
+
+* **Images** are loaded from Wikimedia Commons and are royalty-free.
+* You can replace the image URLs with your own hosted images if preferred.
+* If you plan to publish this online, let me know — I can help you optimize it for SEO and mobile performance.
+
+Would you like to:
+
+* Add an FAQ section?
+* Include a contact form or email?
+* Link to Roku official resources?
+
+Let me know what you'd like to add next.
